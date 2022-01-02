@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO APP</title>
+        <link rel="icon" href="index.ico">
+        <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="index.ico"><script defer src="main.js"></script></head>
+
+    <body>
+        <script src="main.js"></script>
+        <div id="main">
+            <div class="sidenav">
+                <div class="button">
+                    <button onclick="visualizeAddList()">ADD LIST</button>
+                </div>
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="main">
+                <div class="button">
+                    <button>ADD TODO</button>
+                </div>
+
+                <div id="todos"></div>
+            </div>
+        </div>
+
+
+        <div id="add_list" style="display:none;">
+            <form>
+                <textarea required>Title</textarea>
+                <input type="submit" value="ADD" onclick="closeAddList()">
+            </form>
+        </div>
+
+        
+
+        
+    </body>
+</html>

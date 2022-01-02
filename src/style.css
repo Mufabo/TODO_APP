@@ -1,0 +1,46 @@
+ /* The sidebar menu */
+ .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20vw; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 10px; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    word-wrap: break-word;
+
+  }
+  
+  .vl {
+    border-left: 6px solid black;
+    height: 95vh;
+    margin-left: 20vw;
+    position: fixed;
+  }
+
+  .button {
+      text-align: center;
+      margin:auto;
+     
+  }
+
+  /* Style page content */
+  .main {
+    margin-left: 25vw; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    
+  }
+  
+  #add_todo {
+
+  }
+
+  .prjct {
+    border-style: solid;
+    margin-top: 5px;
+    position: relative;
+  }
+
+  #add_list {
+    margin-left: 50vw;
+  }

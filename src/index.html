@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO APP</title>
+        <link rel="icon" href="index.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script type="module" src="main.js"></script>
+        <div id="main">
+            <div class="sidenav">
+                <div class="button">
+                    <button onclick="visualizeAddList()">ADD LIST</button>
+                </div>
+                <div id="projects">
+                    <div class="prjct">
+                        <span>text</span>
+                        <div>
+                            <button onclick="deleteProject(this)" class="button">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="main">
+                <div class="button">
+                    <button>ADD TODO</button>
+                </div>
+
+                <div id="todos"></div>
+            </div>
+        </div>
+
+
+        <div id="add_list" style="display:none;">
+            <form>
+                <textarea id="listInput" required>Title</textarea>
+                <input type="submit" value="ADD" onclick="closeAddList()">
+            </form>
+        </div>
+
+        
+
+        
+    </body>
+</html>
