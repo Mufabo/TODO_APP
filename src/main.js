@@ -6,6 +6,7 @@ if (localStorage.getItem("myList") !== null) {
 } else {
     var myList = {};
     console.log("myList created");
+    console.log(visualizeAddList);
 }
 
 function addProject(project){
@@ -13,11 +14,13 @@ function addProject(project){
     localStorage.setItem(myList, JSON.stringify(myList));
 }
 
-function deleteProject(btn){
-    var parent = btn.parentElement;
+function deleteProject(){
+    var parent = this.parentElement;
     delete myList[parent.children[0].textContent];
     localStorage.setItem(myList, JSON.stringify(myList));
 }
 
-
+document.getElementById("ADD_LIST").addEventListener('click', visualizeAddList);
+document.getElementById("deleteProject").addEventListener('click', deleteProject);
+document.getElementById("closeAddList").addEventListener('click', closeAddList);
 
