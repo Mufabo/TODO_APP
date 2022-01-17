@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TODO APP</title>
-        <link rel="icon" href="index.ico">
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <script type="module" src="main.js"></script>
-        <div id="main">
-            <div class="sidenav">
-                <div class="button">
-                    <button id="ADD_LIST">ADD LIST</button>
-                </div>
-                <div id="projects">
-                    <div class="prjct">
-                        <span>text</span>
-                        <div>
-                            <button id="deleteProject" class="button">DELETE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+    <title>TODO APP</title>
+    <link rel="icon" href="index.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <div class="vl"></div>
-
-            <div class="main">
-                <div class="button">
-                    <button>ADD TODO</button>
+<body>
+    <script type="module" src="main.js"></script>
+    <div id="main">
+        <div class="sidenav">
+            <button id="ADD_LIST" class="button">ADD LIST</button>
+            <div id="projects">
+                <div class="item" id="The Odin Project">
+                    The Odin Project
+                    <button id="openProject" class="button">OPEN PROJECT</button>
+                    <button id="deleteProject" class="button">DELETE PROJECT</button>
                 </div>
 
-                <div id="todos"></div>
+                <div class="item" id="CS 101">
+                    CS 101
+                    <button id="openProject" class="button">OPEN PROJECT</button>
+                    <button id="deleteProject" class="button">DELETE PROJECT</button>
+                </div>
             </div>
         </div>
 
+        <div class="vl"></div>
 
-        <div id="add_list" style="display:none;">
-            <form>
-                <textarea id="listInput" required>Title</textarea>
-                <input type="submit" value="ADD" id="closeAddList">
-            </form>
+        <div class="main">
+            <button class="button">ADD TODO</button>
+
+            <div id="todos">
+                <div class="item">
+                    Finish the TODO app
+                    <div class="priority">!!!!</div>
+                    <button id="deleteProject" class="button" >DELETE TODO</button>
+                </div>
+
+            </div>
         </div>
+    </div>
 
-        
 
-        
-    </body>
+    <div id="add_list" style="display:none;">
+        <form>
+            <textarea id="listInput" required>Title</textarea>
+            <input type="submit" value="ADD" id="closeAddList">
+        </form>
+    </div>
+
+
+
+
+</body>
+
 </html>
