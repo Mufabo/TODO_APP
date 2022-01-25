@@ -1,12 +1,12 @@
 .sidenav {
     height: 100%;
-    width: 20vw;
+    width: 25vw;
     position: fixed;
     /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1;
     /* Stay on top */
     top: 10px;
-    left: 0;
+    left: 5px;
     overflow-x: hidden;
     word-wrap: break-word;
     /* Disable horizontal scroll */
@@ -16,7 +16,7 @@
     border-left: 6px solid black;
     /* */
     height: 95vh;
-    margin-left: 20vw;
+    margin-left: 25.3vw;
     /*margin independent of sidenav. If less than width of sidenav, there will be overlap */
     position: fixed;
 }
@@ -29,10 +29,8 @@
 }
 
 .main {
-    margin-left: 25vw;
+    margin-left: 26vw;
 }
-
-#add_todo {}
 
 .item {
     border-style: solid;
